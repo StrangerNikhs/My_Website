@@ -8,7 +8,7 @@ const path = require('path');
 app.use(express.static(path.join(__dirname, "js")));
 app.use(express.static(path.join(__dirname, 'public')));
 
-const empCollection = require('../model/model.js');
+const empCollection = require('../My_Website/src/model/model.js');
 const template_path = path.join(__dirname, "template/views");
 require('./src/database/mongoose');
 app.set('view engine', 'hbs');
